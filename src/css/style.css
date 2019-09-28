@@ -33,7 +33,7 @@ body {
   font-weight: 400;
   color: #000000;
 
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
 *, *::before, *::after {
@@ -116,6 +116,34 @@ input[type="radio"].visually-hidden {
   padding-right: 20px;
 }
 
+@media (max-width: 1300px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 95%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
 /* Интро */
 
 .intro {
@@ -129,6 +157,7 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
   padding: 40px 30px;
   border-radius: 5px;
+  box-shadow: 5px 5px 10px 10px rgba(0,0,0,0.2);
 }
 
 .logo {
@@ -140,9 +169,21 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 }
 
+@media (max-width: 360px) {
+  .logo {
+    font-size: 30px;
+  }
+}
+
 .intro__desc {
   margin-bottom: 20px;
   line-height: 22px;
+}
+
+@media (max-width: 360px) {
+  .intro__des {
+    font-size: 14px;
+  }
 }
 
 .intro__form {
@@ -197,6 +238,18 @@ input[type="radio"].visually-hidden {
   margin-bottom: 40px;
 }
 
+@media (max-width: 500px) {
+  .operators {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 300px) {
+  .operators {
+    margin-bottom: 15px;
+  }
+}
+
 .operators__text {
   margin-bottom: 15px;
   text-align: center;
@@ -215,8 +268,22 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
 }
 
-.operators__item:not(:last-child) {
-  margin-right: 25px;
+.operators__item {
+  margin-right: 12.5px;
+  margin-left: 12.5px;
+}
+
+@media (max-width: 390px) {
+  .operators__item {
+    margin-bottom: 12px;
+  }
+}
+
+@media (max-width: 365px) {
+  .operators__item {
+  margin-right: 6px;
+  margin-left: 6px;
+}
 }
 
 .operators__item svg {
