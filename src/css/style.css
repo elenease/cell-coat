@@ -70,9 +70,9 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
-* {
+/** {
   outline: 1px solid gray;
-}
+}*/
 
 /* Стили контейнеров */
 
