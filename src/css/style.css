@@ -138,6 +138,8 @@ input[type="radio"].visually-hidden {
 .form__field {
   width: 100%;
   box-sizing: border-box;
+  padding-top: 14px;
+  padding-right: 40px;
   padding: 14px 15px;
 
   border: 1px solid #80808063;
