@@ -160,6 +160,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 .operators__item {
@@ -233,7 +234,7 @@ input[type="radio"].visually-hidden {
   position: fixed;
   top: 0;
   left: 0;
-  min-width: 400px;
+  width: 350px;
   min-height: 100vh;
 
   background-color: #ffffff;
@@ -241,13 +242,70 @@ input[type="radio"].visually-hidden {
 }
 
 .sidebar__menu {
-
+  padding: 30px 30px;
 }
+
+.side-menu__text {
+  width: 92%;
+  margin-bottom: 30px;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.side-menu .operators__text {
+  font-weight: 500;
+}
+
+.standarts__text {
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.side-menu .form__fields {
+  margin-bottom: 30px;
+}
+
+.standarts__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.standarts__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  background-color: #ffffff;
+
+  color: #3E3E3E;
+
+  border: 1px solid #000000;
+  border-radius: 3px;
+}
+
+.standarts__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.standarts__item label {
+  font-family: 'Passion One', 'Arial', sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.standarts__item--active {
+  background-color: #3E3E3E;
+  color: #ffffff;
+}
+
+/* Кнопка сворачивания/разворачивания */
 
 .sidebar__toggle {
   position: absolute;
   min-width: 40px;
-  margin-left: 407px;
+  margin-left: 363px;
   margin-top: 12px;
   top: 0;
   left: 0;
