@@ -1,3 +1,21 @@
+/* Шрифты */
+
+/*@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto.woff2") format("woff2"), url("../fonts/roboto.woff") format("woff");
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+}*/
+
+/*@font-face {
+  font-family: "Passion One";
+  src: url("../fonts/passion-one.woff2") format("woff2"), url("../fonts/passion-one.woff") format("woff");
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+}*/
+
 /* Основные стили */
 
 html,
@@ -131,6 +149,23 @@ input[type="radio"].visually-hidden {
   width: 100%;
 }
 
+.form__group {
+  position: relative;
+}
+
+.form__group::after {
+  position: absolute;
+  content: "";
+  top: 15px;
+  right: 15px;
+  width: 18px;
+  height: 18px;
+  background-image: url('../img/avto-icon.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 2;
+}
+
 .form__group:not(:last-child) {
   margin-bottom: 15px;
 }
@@ -139,12 +174,14 @@ input[type="radio"].visually-hidden {
   width: 100%;
   box-sizing: border-box;
   padding-top: 14px;
-  padding-right: 40px;
-  padding: 14px 15px;
+  padding-right: 50px;
+  padding-bottom: 14px;
+  padding-left: 15px;
 
   border: 1px solid #80808063;
   border-radius: 4px;
   box-shadow: 0 2px 6px 0 rgba(0,0,0,.2);
+  z-index: 1;
 }
 
 .form__fields {
