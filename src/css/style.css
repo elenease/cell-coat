@@ -9,7 +9,7 @@ body {
   background-color: #ffffff;
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 1.25;
   font-weight: 400;
   color: #000000;
 }
@@ -95,3 +95,107 @@ input[type="radio"].visually-hidden {
 }
 
 /* ИНТРО */
+
+.intro {
+  width: 400px;
+  min-height: 500px;
+
+  background-color: #ffffff;
+  padding: 40px 30px;
+}
+
+.logo {
+  margin-bottom: 30px;
+
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.intro__desc {
+  margin-bottom: 20px;
+  line-height: 20px;
+}
+
+.intro__form {
+  width: 100%;
+}
+
+.form__group:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.form__field {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 14px 15px;
+
+  border: 1px solid #333;
+  border-radius: 4px;
+}
+
+.form__fields {
+  margin-bottom: 20px;
+}
+
+.form__field:hover,
+.form__field:focus {
+  border: 1px solid #000000;
+}
+
+.operators {
+  margin-bottom: 40px;
+}
+
+.operators__text {
+  margin-bottom: 15px;
+}
+
+.operators__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.operators__item {
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+}
+
+.operators__item:not(:last-child) {
+  margin-right: 25px;
+}
+
+.operators__item svg {
+  fill: #3E3E3E;
+}
+
+.operators__item--active svg {
+  fill: #80000f;
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+  display: inline-block;
+}
+
+.intro__btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #245e90;
+
+  padding: 15px 15px;
+
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+
+  border-radius: 4px;
+  cursor: pointer;
+}
+
