@@ -203,7 +203,12 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
 }
 
-/* Сстраница карты */
+.intro__btn:hover,
+.intro__btn:focus {
+  background-color: #223b50;
+}
+
+/* Страница карты */
 
 .main.map {
   background: none;
