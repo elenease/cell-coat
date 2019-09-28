@@ -1,3 +1,5 @@
+/* Основные стили */
+
 html,
 body {
   width: 100%;
@@ -12,6 +14,8 @@ body {
   line-height: 1.25;
   font-weight: 400;
   color: #000000;
+
+  overflow: hidden;
 }
 
 *, *::before, *::after {
@@ -70,7 +74,7 @@ input[type="radio"].visually-hidden {
   outline: 1px solid gray;
 }
 
-/* ОСНОВНАЯ ЧАСТЬ */
+/* Стили контейнеров */
 
 .main {
   width: 100%;
@@ -94,7 +98,7 @@ input[type="radio"].visually-hidden {
   padding-right: 20px;
 }
 
-/* ИНТРО */
+/* Интро */
 
 .intro {
   width: 400px;
@@ -199,6 +203,20 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
 }
 
-/* СТРАНИЦА КАРТЫ */
+/* Сстраница карты */
 
+.main.map {
+  background: none;
+}
 
+.map .container {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.map__container {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+}
