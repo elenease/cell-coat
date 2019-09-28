@@ -10,7 +10,7 @@ body {
 
   background-color: #ffffff;
   font-family: 'Roboto', Arial, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.25;
   font-weight: 400;
   color: #000000;
@@ -101,15 +101,20 @@ input[type="radio"].visually-hidden {
 /* Интро */
 
 .intro {
-  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 410px;
   min-height: 500px;
 
   background-color: #ffffff;
   padding: 40px 30px;
+  border-radius: 5px;
 }
 
 .logo {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 
   font-size: 40px;
   line-height: 40px;
@@ -119,7 +124,7 @@ input[type="radio"].visually-hidden {
 
 .intro__desc {
   margin-bottom: 20px;
-  line-height: 20px;
+  line-height: 22px;
 }
 
 .intro__form {
@@ -135,17 +140,18 @@ input[type="radio"].visually-hidden {
   box-sizing: border-box;
   padding: 14px 15px;
 
-  border: 1px solid #333;
+  border: 1px solid #80808063;
   border-radius: 4px;
+  box-shadow: 0 2px 6px 0 rgba(0,0,0,.2);
 }
 
 .form__fields {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .form__field:hover,
 .form__field:focus {
-  border: 1px solid #000000;
+  border: 1px solid gray;
 }
 
 .operators {
@@ -154,12 +160,13 @@ input[type="radio"].visually-hidden {
 
 .operators__text {
   margin-bottom: 15px;
+  text-align: center;
 }
 
 .operators__list {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -250,24 +257,27 @@ input[type="radio"].visually-hidden {
   margin-bottom: 30px;
   font-size: 17px;
   font-weight: 500;
+  text-align: center;
 }
 
 .side-menu .operators__text {
   font-weight: 500;
 }
 
+.standarts {
+  margin-bottom: 60px;
+}
+
 .standarts__text {
   font-weight: 500;
   margin-bottom: 15px;
-}
-
-.side-menu .form__fields {
-  margin-bottom: 30px;
+  text-align: center;
 }
 
 .standarts__list {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -281,7 +291,7 @@ input[type="radio"].visually-hidden {
 
   color: #3E3E3E;
 
-  border: 1px solid #000000;
+  border: 1px solid #444444;
   border-radius: 3px;
 }
 
@@ -298,6 +308,28 @@ input[type="radio"].visually-hidden {
 .standarts__item--active {
   background-color: #3E3E3E;
   color: #ffffff;
+}
+
+.side-menu__btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+
+  padding: 15px 15px;
+
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.side-menu__btn:hover,
+.side-menu__btn:focus {
+  background-color: #b30f0f;
 }
 
 /* Кнопка сворачивания/разворачивания */
