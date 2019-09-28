@@ -12,7 +12,8 @@ const cssFiles = [
 ];
 
 const jsFiles = [
-  './src/js/main.js'
+  './src/js/intro.js',
+  './src/js/map.js'
 ];
 
 const styles = () => {
