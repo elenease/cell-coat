@@ -1,7 +1,12 @@
 var intro = document.querySelector('.intro');
+var sidebar = document.querySelector('.sidebar');
 
 if (intro) {
   var operators_block = intro.querySelector('.operators__list');
+}
+
+if (sidebar) {
+  var sidebar_operators_block = sidebar.querySelector('.operators__list');
 }
 
 var operatorsBlockClickHandler = function(evt) {
@@ -13,4 +18,8 @@ var operatorsBlockClickHandler = function(evt) {
 
 if (operators_block) {
   operators_block.addEventListener('click', operatorsBlockClickHandler);
+}
+
+if (sidebar_operators_block) {
+  sidebar_operators_block.addEventListener('click', operatorsBlockClickHandler);
 }
