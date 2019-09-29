@@ -45,5 +45,3 @@ if (sidebar && sidebar_toggle) {
   sidebar_toggle.addEventListener('click', sidebarToggleClickHandler);
 
 }
-
-// Переход на карту
