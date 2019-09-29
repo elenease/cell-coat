@@ -6,10 +6,11 @@ if (intro) {
 
 var operatorsBlockClickHandler = function(evt) {
   var target = evt.target.closest('li');
-  target ? target.classList.toggle('operators__item--active') : false;
+  target.classList.toggle('operators__item--active');
+  var input = target.querySelector('input');
+  input.getAttribute('checked') == 'checked' ? input.setAttribute('checked', false) : input.setAttribute('checked', 'checked');
 };
 
 if (operators_block) {
   operators_block.addEventListener('click', operatorsBlockClickHandler);
 }
-
