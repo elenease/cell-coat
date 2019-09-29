@@ -88,9 +88,9 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
-/** {
-  outline: 1px solid gray;
-}*/
+button {
+  cursor: pointer;
+}
 
 /* Стили контейнеров */
 
@@ -457,10 +457,11 @@ input[type="radio"].visually-hidden {
 .sidebar__toggle {
   position: absolute;
   min-width: 40px;
-  margin-left: 363px;
+  margin-left: 300px;
   margin-top: 12px;
   top: 0;
   left: 0;
+  z-index: 6;
 }
 
 .sidebar__toggle-btn {

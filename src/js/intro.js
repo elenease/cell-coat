@@ -23,3 +23,25 @@ if (operators_block) {
 if (sidebar_operators_block) {
   sidebar_operators_block.addEventListener('click', operatorsBlockClickHandler);
 }
+
+// Открытие/скрытие меню
+
+var sidebar = document.querySelector('.sidebar');
+var sidebar_toggle = document.querySelector('.sidebar__toggle');
+
+if (sidebar && sidebar_toggle) {
+
+  var sidebarToggleClickHandler = function(evt) {
+    var targetBtn = evt.target.closest('button');
+    sidebar.classList.toggle('v-hidden');
+
+    if (sidebar.classList.contains('v-hidden')) {
+      sidebar_toggle.style.marginLeft = '20px';
+    } else {
+      sidebar_toggle.style.marginLeft = '300px';
+    }
+  };
+
+  sidebar_toggle.addEventListener('click', sidebarToggleClickHandler);
+
+}
